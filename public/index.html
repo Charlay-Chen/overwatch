@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>守望先锋官方网站</title>
+    <link rel="icon" href="img/index/overwatch_icon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="navbar navbar-expand-sm bg-dark navbar-dark index-nav-1">
+    <!--1.最前面不隐藏菜单项-->
+    <a href="" class="navbar-brand"></a>
+    <!--2.在小屏幕下出现的按钮，按钮上有三条线，折叠的激发按钮-->
+    <button data-toggle="collapse" data-target="#content" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--3.导航栏里的菜单项，小屏幕以上横向,小屏幕以下纵向显示-->
+    <!--折叠的内容-->
+    <div class="collapse navbar-collapse content">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="" class="nav-link">游戏</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">商城</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">新闻</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">电子竞技</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">暴雪嘉年华</a>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse content-right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="" class="nav-link">支持</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">你的通行证</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="navbar navbar-expand-sm bg-light navbar-light index-nav-2">
+        <!--1.最前面不隐藏菜单项-->
+        <a href="" class="navbar-brand"></a>
+        <!--2.在小屏幕下出现的按钮，按钮上有三条线，折叠的激发按钮-->
+        <button data-toggle="collapse" data-target="#content" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--3.导航栏里的菜单项，小屏幕以上横向,小屏幕以下纵向显示-->
+        <!--折叠的内容-->
+        <div class="collapse navbar-collapse content">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">游戏</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">英雄</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">活动</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">视频图片</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">下载</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">电子竞技</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">社区</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse content-right">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">购买</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="index-bg">
+    <div class="home-header__video-bg HeaderSection-video--desktop">
+        <video id="pc-video" muted="muted" autoplay="autoplay" loop="loop" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x5-playsinline="x5-playsinline" poster="https://overwatch.nosdn.127.net/1/assets/img/pages/home/header-video-poster.jpg">
+            <source src="http://overwatch.nos.netease.com/1/assets/img/pages/home/anniversary/header.webm" type="video/webm">
+            <source src="http://overwatch.nos.netease.com/1/assets/img/pages/home/anniversary/header.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="index-bg-title">
+        <img src="img/index/1_assets_img_pages_home_logo_new_0321.png" alt=""class="index-bg-title-logo">
+        <div class="index-bg-button">
+            <a href="#" class="index-bg-bt-introduce">游戏介绍</a>
+            <a href="#" class="index-bg-bt-buy">立即购买</a>
+        </div>
+    </div>
+    <a class="BgVidControl" onclick="playPause()">
+        <span class="BgVidControl-icon"></span>
+        <span class="BgVidControl-text">暂停</span>
+    </a>
+</div>
+<div class="container index-news">
+    <div class="row">
+        <div class="col-lg-12 ">
+            <h1>新闻公告</h1>
+        </div>
+        <div class="col-lg-12">
+            <div class="row index-news-img">
+                <div class="col-lg-4">
+                    <a href="" class="news-img"></a>
+                    <div class="content">
+                        <h3>
+                            <a href="">“行动档案：哈瓦那行动”现已上线</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="news-img"></a>
+                    <div class="content">
+                        <h3>
+                            <a href="">全新地图“巴黎”现已上线</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="news-img"></a>
+                    <div class="content">
+                        <h3>
+                            <a href="">购《守望先锋》享5折特惠</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 index-news-btn">
+            <a href="">查看所有新闻</a>
+        </div>
+    </div>
+</div>
+<div class="index-live">
+    <div class="wahana-content">
+        <div class="wahana-detail">
+            <header>
+                <h2>“哈瓦那行动”：现已上线</h2>
+                <p class="index-live-time">2019年 4月17日—5月7日</p>
+            </header>
+            <p class="wahana-detail-desc">在2019“守望先锋”行动档案中，参与全新的合作任务“哈瓦那行动”，使用你最喜爱的英雄解锁出自“守望先锋”历史片段的全新皮肤！</p>
+            <a href="" >查看活动详情</a>
+        </div>
+
+    </div>
+</div>
+<script>
+    var myVideo = document.getElementById("pc-video");
+    function playPause()
+    {
+        if(myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+            // myVideo.stop();
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="icon" href="img/login/overwatch_icon.ico">
+  </head>
+  <body>
+    <div class="login">
+      <table></table>
+      <div class="logo"></div>
+      <div class="input">
+        <div class="uname">
+          <input id="email" type="text" name="email" value="" title="电子邮箱" class="input-login" placeholder="电子邮箱">
+        </div>
+        <div class="upwd">
+          <input id="upwd" type="password" name="uname" value="" title="密码" class="input-login" placeholder="密码">
+        </div>
+        <div class="button">
+          <button type="button" name="button" class="login-btn" onclick="login()">登陆</button>
+        </div>
+        <div class="party-line">
+          <span>或使用以下账号登陆</span>
+        </div>
+        <div class="button">
+          <button type="button" name="button" class="wy-btn">使用网易通行证登陆</button>
+        </div>
+        <ul>
+          <li>
+            <a href="register.html">免费创建暴雪游戏通行证</a>
+          </li>
+          <li>
+            <a href="#">无法登陆</a>
+          </li>
+          <li>
+            <a href="#">安全令重新同步</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="flist">
+        <ul>
+          <li><a href="#">Battle.net EULA</a></li>
+          <li>|</li>
+          <li><a href="#">隐私</a></li>
+          <li>|</li>
+          <li><a href="#">法律条款</a></li>
+          <li>|</li>
+          <li><a href="#">著作侵占权</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">沪网文〔2017〕9633-727号</a></li>
+          <li>|</li>
+          <li><a href="#">增值电信业务经营许可证编号：沪B2－20080012</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">互联网违法和不良信息举报电话：0571-28090163</a></li>
+          <li>|</li>
+          <li><a href="#">沪公网安备：31011502002167</a></li>
+        </ul>
+        <ul>
+          <li>©2019暴雪娱乐有限公司版权所有。</li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function login() {
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+          if (xhr.readyState==4&&xhr.status==200) {
+            var result=xhr.responseText;
+            alert(result);
+          }
+        }
+        xhr.open("post","/user/login",true);
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        var formdata="email="+email.value+"&upwd="+upwd.value;
+        console.log(formdata);
+        xhr.send(formdata);
+      }
+    </script>
+  </body>
+</html>

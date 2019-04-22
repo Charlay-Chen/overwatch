@@ -1,0 +1,445 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+body{
+  /* width: 100%; */
+  background-color:#0d1e30;
+  background-image: url("../img/login/login-background-img.jpg");
+  /* background-position: contain; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 15px;
+
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+/* body .logo{
+  margin-top: 55px;
+  margin-bottom: 40px
+} */
+.login{
+  /* width: 540px;
+  display: inline-block !important;
+  display: inline;
+  margin: 0 auto; */
+  height: 600px;
+}
+div.logo{
+  width: 200px;
+  height: 105px;
+  background-image: url("../img/login/blizzard-logo.png");
+  margin:0 auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+div.input{
+  width: 360px;
+  height: 40px;
+  margin:0 auto;
+
+}
+input.input-login{
+  margin:8px 0;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 20px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255,255,255,0.3);
+  background-color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.7);
+  -webkit-transition: border .2s,background-color .2s;
+}
+input.input-login:hover{
+  border: 1px solid rgba(204, 204, 204, 1);
+  background-color: rgba(16, 35, 52, 1);
+}
+button.login-btn{
+  width: 100%;height: 40px;
+  margin:5px 0;padding: 0 10px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #0e86ca;
+  border: 1px solid #10a1de;
+  -webkit-transition: background-color .3s;
+}
+button.login-btn:hover{
+  background-color: #10a1de;
+}
+.party-line{
+  text-align: center;
+  color: rgba(74, 94, 94, 1);
+  margin: 5px 0;
+  position: relative;
+}
+.party-line>span{
+  font-size: 13px;
+}
+.party-line>span::before{
+  content: "";
+  border:0.5px solid rgba(74, 94, 94, 0.5);
+  width: 30%;
+  position: absolute;
+  top: 51%;
+  left: 0px;
+}
+.party-line>span::after{
+  content: "";
+  /* text-decoration: line-through; */
+  border:0.5px solid rgba(74, 94, 94, 0.5);
+  width: 30%;
+  /* height: 1px; */
+  position: absolute;
+  top: 51%;
+  right: 0px;
+}
+button.wy-btn{
+  width: 100%;height: 40px;
+  margin: 5px 0;padding: 0 10px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #d60000;
+  /* border: 1px solid #d60111; */
+  border-color: transparent;
+  -webkit-transition: background-color .3s;
+  margin-bottom: 15px;
+}
+button.wy-btn:hover{
+  background-color: #ec1c1c;
+}
+.login ul li{
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+.input ul li a{
+  color: #00aeff;
+  transition: color .2s;
+  text-decoration: none;
+}
+.input ul li a:hover{
+  color: #fff;
+}
+.footer{
+  width: 62%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 110px
+}
+.footer div{
+  text-align: center;
+}
+.footer ul{
+  margin-top: 5px;
+}
+.footer li a,.footer li{
+  text-decoration: none;
+  list-style: none;
+  color: #b7bbc0;
+  display: inline;
+  margin: 0 5px;
+  font-size: 13px;
+}
+.flist ul:nth-child(4) li{
+  font-size: 12px;
+  color: #55616c;
+}
+.footer li a:hover{
+  color: #fff;
+}
+.flist ul:nth-child(5) li{
+  text-align: center;
+  margin:0 15px;
+}
+.flist ul:nth-child(5) li:nth-child(1){
+  display:inline-block;
+  width: 28px;height: 27px;
+  background-image: url(../img/login/1.gif);
+}
+.flist ul:nth-child(5) li:nth-child(2){
+  display:inline-block;
+  width: 24px;height: 25px;
+  background-image: url(../img/login/2.gif);
+}
+.flist ul:nth-child(5) li:nth-child(3){
+  display:inline-block;
+  width: 27px;height: 27px;
+  background-image: url(../img/login/3.gif);
+}
+.flist ul:nth-child(5) li:nth-child(4){
+  display:inline-block;
+  width: 27px;height: 27px;
+  background-image: url(../img/login/4.gif);
+}
+/* 注册界面 */
+div.logo{
+  margin-bottom: 20px;
+}
+.register{
+  max-width: 500px;
+  margin: 20px auto;
+}
+.register .content-header h1{
+  color:#fff;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.register .button{
+  margin-bottom: 15px;
+}
+.register .party-line{
+  margin: 20px 0;
+}
+.register .party-line>span::before{
+  width: 45%;
+}
+.register .party-line>span::after{
+  width: 45%;
+}
+.register .content-header p{
+  margin-bottom: 10px;
+  line-height: 25px;
+  display: block;
+  font-size: 15px;
+  color: #cfd2d7;
+}
+.content-input input{
+  margin:8px 0;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 20px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255,255,255,0.3);
+  background-color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.7);
+  -webkit-transition: border .2s,background-color .2s;
+}
+.register .phone .phone-left{
+  float: left;
+  width: 15%;
+  height: 40px;
+}
+.register .phone .phone-left .phone-left-1{
+  position: relative;
+}
+.register .phone .phone-left .phone-left-1 .current{
+  /*position: absolute;*/
+  border: 1px solid rgba(255,255,255,0.3);
+  background-color: #111e2e;
+  color: #3f3f3f;
+  line-height: 38px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  /*left: 20px;*/
+}
+.register .phone::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.register .phone .phone-right{
+  float: right;
+  width: 85%;
+}
+.register .phone .phone-right>input{
+  margin: 0;
+}
+.register .validate {
+  float: left;
+  width: 74%;
+  margin-right: 1%;
+}
+.register .validate::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.content-input::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.register .validate-bt{
+  float: left;
+  width: 25%;
+
+}
+.register .validate-bt>button{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 8px 0;
+  padding: 0 20px;
+  font-size: 15px;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  color: #00aeff;
+  border: 1px solid #0d639f;
+  box-shadow: 0 0 rgba(0,0,0,0);
+  border-radius: 0;
+  transition: background-color .2s,box-shadow .2s,background-color .2s,border-color .2s,color .2s;
+  box-sizing: border-box;
+}
+.register .validate-bt>button:hover{
+  color: #08CBFF;
+  border: 1px solid #0D6A9F;
+}
+.conceal a{
+  color: #04aeff;
+}
+.conceal a:hover{
+  color: #fff;
+}
+.conceal label{
+  position: relative;
+  padding-left: 30px;
+}
+.checkbox{
+  position: absolute;
+  left: 0;
+  background-color: grey;
+  width: 20px;
+  height: 20px;
+  color: grey;
+}
+div.register-btn{
+    margin: 20px 0;
+}
+.register-btn a{
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 8px 0;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: #00aeff;
+    border: 1px solid #0d639f;
+    box-shadow: 0 0 rgba(0,0,0,0);
+    border-radius: 0;
+    transition: background-color .2s,box-shadow .2s,background-color .2s,border-color .2s,color .2s;
+    box-sizing: border-box;
+}
+.register-btn a:hover{
+    color: #08CBFF;
+    border: 1px solid #0D6A9F;
+}
+div.content-footer{
+    padding-top: 20px;
+}
+div.content-footer a{
+    color: #00aeff;
+    transition: color .2s;
+}
+div.content-footer a:hover{
+    color: #fff;
+}
+.register-footer{
+    margin-top: 50px;
+}
+.register-footer .footer-logo{
+    margin-top: 70px;
+    text-align: center;
+
+}
+.register-footer .footer-logo a{
+    display: inline-block;
+    width: 130px;
+    height: 66px;
+    background-image: url("../img/login/blizzard-logo.png");
+    background-size:cover;
+}
+.NavBarFooter ul{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.NavBarFooter ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #b7bbc0;
+    display: inline;
+    /*margin: 0 5px;*/
+    font-size: 17px;
+}
+.NavBarFooter ul li a{
+    color: #bababa;
+    transition: color .2s;
+}
+.NavBarFooter ul li a:hover{
+    color: #f5f5f5;
+}
+.NavBarFooter .footer-text-all{
+    text-align: center;
+    margin-top: 10px;
+}
+.NavBarFooter .footer-text-all .footer-text{
+    font-family: Blizzard,Arial,Helvetica,"Segoe UI Symbol","Segoe MDL2 Assets","微软雅黑","Microsoft YaHei","Hei SC",sans-serif;
+    display: inline-block;
+    margin-top: 5px;
+    /*font-size: 13px;*/
+    color: #585c58;
+    /*margin: 5px auto;*/
+}
+
+.footer-list-second ul li{
+    font-size: 13px;
+}
+.footer-list-third ul{
+    margin-top: 5px;
+}
+.footer-list-third ul li a{
+    font-size: 13px;
+    color: #585c58;!important;
+}
+.footer-list-forth ul{
+    margin-top: 5px;
+}
+.footer-list-forth ul li a{
+    font-size: 13px;
+    color: #bababa;
+}
+
+.footer-icon ul:nth-child(1) li{
+    text-align: center;
+    margin:0 15px;
+}
+.footer-icon ul:nth-child(1) li:nth-child(1){
+    display:inline-block;
+    width: 28px;height: 27px;
+    background-image: url(../img/login/1.gif);
+}
+.footer-icon ul:nth-child(1) li:nth-child(2){
+    display:inline-block;
+    width: 24px;height: 25px;
+    background-image: url(../img/login/2.gif);
+}
+.footer-icon ul:nth-child(1) li:nth-child(3){
+    display:inline-block;
+    width: 27px;height: 27px;
+    background-image: url(../img/login/3.gif);
+}
+.footer-icon ul:nth-child(1) li:nth-child(4){
+    display:inline-block;
+    width: 27px;height: 27px;
+    background-image: url(../img/login/4.gif);
+}
+/*  */

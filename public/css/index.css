@@ -1,0 +1,308 @@
+body{
+    background-color: #f6f6f6;
+}
+.container{
+    max-width: 1600px;
+}
+a:hover{
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.index-nav-1{
+   background-color: rgba(0,0,0,.7)!important;
+}
+.index-nav-1>a{
+    margin-left: 191px;
+    background-image: url("../img/index/1_fsbnet_icon-sprite.png");
+    height: 40px;
+    width: 61.82px;
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+}
+.index-nav-2{
+    padding: 0;
+}
+.index-nav-2>a{
+    /*margin-left: 191px;*/
+    background-image: url("../img/index/1_assets_img_logos_nav_logo_new.jpg");
+    height: 51px;
+    width: 53px;
+    background-repeat: repeat;
+    background-position: 0px 49px;
+}
+.index-nav-1 .content ul li{
+    margin-right: 30px;
+}
+.index-nav-1 .content-right ul li{
+    margin-left: 30px;
+}
+.index-nav-1 .content-right{
+    margin-right: 191px;
+    flex-direction: row-reverse;
+}
+.index-nav-2{
+    margin-top: 50px;
+}
+.index-nav-2>a{
+    margin-right: 0;
+}
+.index-nav-2 .content{
+    height: 51px;
+}
+.index-nav-2 .content ul{
+    height: 51px;
+}
+.index-nav-2 .content ul li{
+    padding: 0 20px;
+    border-right: 1px solid #e5e3dc;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    line-height: 35px;
+    transition: background-color .2s;
+}
+.index-nav-2 .content ul li a{
+    /*color: #f7931e;*/
+}
+.index-nav-2 .content ul li:hover{
+    background-color: #4b535d;
+}
+.index-nav-2 .content ul li:hover a{
+    color: #f7931e;
+}
+.index-nav-2 .content ul li a:hover{
+    color: #f7931e!important;
+}
+.index-nav-2 .content-right{
+    flex-direction: row-reverse;
+    height: 51px;
+}
+.index-nav-2 .content-right ul{
+    height: 51px;
+    width: 113.6px;
+    line-height: 35px;
+    background-color: #f7931e;
+}
+.index-nav-2 .content-right ul li{
+    font-size: 1.1rem;
+    padding: 0 31px;
+}
+.index-nav-2 .content-right ul li a{
+    color: #fff!important;
+    font-weight: 700;
+}
+.index-bg{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    min-height: 600px;
+    overflow: hidden;
+    top: -157px;
+    /*z-index: -9;*/
+}
+.home-header__video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+.home-header__video-bg>video {
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.index-bg-title{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.index-bg-title-logo{
+    margin-top: 30px;
+    margin-bottom: -40px;
+    min-width: 350px;
+    width: 70vmin;
+    margin-left: 2vmin;
+}
+.index-bg-button{
+    width: 80%;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.index-bg-button>a{
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 45px;
+    margin: 0 10px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.index-bg-button .index-bg-bt-introduce{
+    background-color: #00a5e2;
+}
+.index-bg-button{
+    z-index: 20;
+}
+
+.index-bg-button .index-bg-bt-buy{
+     background-color: #f7931e;
+ }
+.index-bg-bt-buy:hover{
+    cursor: pointer;
+}
+.BgVidControl{
+    cursor: pointer;
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.BgVidControl .BgVidControl-icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-image: url(../img/index/1_assets_img_icons_menus_video_control_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.BgVidControl .BgVidControl-text{
+    color: #fff;
+}
+.index-news{
+    position: relative;
+    top: -130px;
+    text-align: center;
+    max-width: 1190px;
+}
+.index-news h1{
+    font-weight: 400;
+   margin-bottom: 40px;
+}
+.index-news-img .news-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    width: auto;
+    height: 205px;
+    display: block;
+}
+.index-news-img>div:nth-child(1) .news-img{
+    background-image: url("../img/index/news-1.jpg");
+}
+.index-news-img>div:nth-child(2) .news-img{
+    background-image: url("../img/index/news-2.jpg");
+}
+.index-news-img>div:nth-child(3) .news-img{
+    background-image: url("../img/index/news-3.jpg");
+}
+.index-news-img .content{
+    position: absolute;
+    bottom: 0;
+    width: 92.5%;
+    background-color: rgba(0,0,0,.75);
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.index-news-img .content h3{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+.index-news-img .content h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.index-news-btn{
+    margin-top: 25px;
+}
+.index-news-btn a{
+    color: #fff;
+    font-weight: 700;
+    background-color: #00a5e2;
+    border-color: transparent;
+    padding: 7.5px 65px;
+    transition: all .2s;
+    text-emphasis: none;
+    margin-top: 50px;
+    border-radius: 2px;
+}
+.index-news-btn a:hover{
+    text-decoration: none;
+    background-color: #0cbdff;
+}
+.index-live{
+    background-image: url("../img/index/index-live.jpg");
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    top: -100px;
+}
+.index-live .wahana-content{
+    justify-content: flex-start;
+}
+.index-live .wahana-detail{
+    align-items: flex-end;
+    text-align: right;
+    width: 960px;
+    position: absolute;
+    top: 175px;
+}
+.index-live .wahana-detail header h2{
+    color: rgb(84, 88, 99);
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+}
+.index-live .wahana-detail header .index-live-time{
+    color: rgb(78, 100, 149);
+    font-size: 24px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+.wahana-detail-desc{
+    display: block;
+    margin-left: 425px;
+    font-size: 18px;
+    line-height: 26px;
+    text-rendering: optimizeLegibility;
+}
+.wahana-detail a{
+    padding: 6px 30px;
+    border: 3px solid #ff9c00;
+    background-color: #f7931e;
+    line-height: 1;
+    letter-spacing: .025em;
+    font-weight: 700;
+    color: #fff;
+}
+.wahana-detail a:hover{
+    background-color: #ff9c00;
+}
