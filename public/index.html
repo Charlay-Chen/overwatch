@@ -98,7 +98,7 @@
         </div>
     </div>
 </div>
-<div class="index-bg" style="z-index: -100">
+<div class="index-bg">
     <div class="home-header__video-bg HeaderSection-video--desktop">
         <video id="pc-video" muted="muted" autoplay="autoplay" loop="loop" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x5-playsinline="x5-playsinline" poster="https://overwatch.nosdn.127.net/1/assets/img/pages/home/header-video-poster.jpg">
             <source src="http://overwatch.nos.netease.com/1/assets/img/pages/home/anniversary/header.webm" type="video/webm">
@@ -112,7 +112,7 @@
             <a href="#" class="index-bg-bt-buy">立即购买</a>
         </div>
     </div>
-    <a class="BgVidControl" onclick="playPause()">
+    <a class="BgVidControl" onclick="playPause()" id="videoControl">
         <span class="BgVidControl-icon"></span>
         <span class="BgVidControl-text">暂停</span>
     </a>
@@ -193,10 +193,21 @@
     var myVideo = document.getElementById("pc-video");
     function playPause()
     {
-        if(myVideo.paused)
+        var a=document.getElementById("videoControl");
+        var span=a.children[0];
+        var span1=a.children[1];
+        console.log(span);
+        if(myVideo.paused){
             myVideo.play();
-        else
+            span.style.backgroundPosition="0 0";
+            span1.innerHTML="暂停";
+            span.onmouseover
+        }
+        else{
             myVideo.pause();
+            span.style.backgroundPosition="0 -32px";
+            span1.innerHTML="播放";
+        }
             // myVideo.stop();
     }
 </script>

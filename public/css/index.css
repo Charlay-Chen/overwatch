@@ -3,6 +3,11 @@ body{
 }
 .container{
     max-width: 1600px;
+    position: relative;
+    z-index: 10;
+}
+a{
+    cursor: pointer;
 }
 a:hover{
     text-decoration: none;
@@ -12,6 +17,8 @@ button:hover{
 }
 .index-nav-1{
    background-color: rgba(0,0,0,.7)!important;
+    position: relative;
+    z-index: 10;
 }
 .index-nav-1>a{
     margin-left: 191px;
