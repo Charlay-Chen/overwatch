@@ -1,6 +1,7 @@
 const express=require('express');
 const bodyParser=require('body-parser');
 const userRouter=require('./routes/user.js');
+const indexRouter=require('./routes/index.js');
 //创建web服务器
 var server=express();
 server.listen(8080);
@@ -12,3 +13,4 @@ server.use(bodyParser.urlencoded({
 }));
 //挂在路由器
 server.use('/user',userRouter);
+server.use('/index',indexRouter);

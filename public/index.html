@@ -177,7 +177,7 @@
             掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！
         </div>
     </div>
-    <div class="index-list-body">
+    <div class="index-list-body" id="hero-des">
         <div class="index-list-body-bg">
             <div class="index-list-body-detail">
                 <h2>D.Va</h2>
@@ -185,33 +185,38 @@
             </div>
         </div>
         <div class="index-list-body-hero">
-            <div class="index-list-body-hero-img"></div>
+            <div class="index-list-body-hero-img" style="background-image: url('img/index/dva.png')"></div>
         </div>
     </div>
+    <div class="index-list-foot">
+        <ul class="hero-group" id="hero-list">
+        </ul>
+    </div>
 </div>
+<script src="js/jquery-1.11.3.js"></script>
 <script>
-    var myVideo = document.getElementById("pc-video");
-    function playPause()
-    {
-        var a=document.getElementById("videoControl");
-        var span=a.children[0];
-        var span1=a.children[1];
-        console.log(span);
-        if(myVideo.paused){
-            myVideo.play();
-            span.style.backgroundPosition="0 0";
-            span1.innerHTML="暂停";
-            span.onmouseover
-        }
-        else{
-            myVideo.pause();
-            span.style.backgroundPosition="0 -32px";
-            span1.innerHTML="播放";
-        }
+        var myVideo = document.getElementById("pc-video");
+        function playPause()
+        {
+            var a=document.getElementById("videoControl");
+            var span=a.children[0];
+            var span1=a.children[1];
+            // console.log(span);
+            if(myVideo.paused){
+                myVideo.play();
+                span.style.backgroundPosition="0 0";
+                span1.innerHTML="暂停";
+                span.onmouseover
+            }
+            else{
+                myVideo.pause();
+                span.style.backgroundPosition="0 -32px";
+                span1.innerHTML="播放";
+            }
             // myVideo.stop();
-    }
+        }
 </script>
-
-
+<script src="js/ajax.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
