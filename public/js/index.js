@@ -26,22 +26,22 @@
             
         }
         var $heroList=$(".hero-list");
-            $heroList.mouseover(function(){
-        var $heroList=$(this);
-        var i=$heroList.attr("data-hero-id");
-        for (const des of result) {
-          if(i==des.hid){
-            $("#hero-des").html(`
-            <div class="index-list-body-bg">
-              <div class="index-list-body-detail">
-                <h2>${des.hname}</h2>
-                <p>${des.hdetail}</p>
+          $heroList.mouseover(function(){
+          var $heroList=$(this);
+          var i=$heroList.attr("data-hero-id");
+          for (const des of result) {
+            if(i==des.hid){
+              $("#hero-des").html(`
+              <div class="index-list-body-bg">
+                <div class="index-list-body-detail">
+                  <h2>${des.hname}</h2>
+                  <p>${des.hdetail}</p>
+                </div>
               </div>
-            </div>
-            <div class="index-list-body-hero">
-                <div class="index-list-body-hero-img" style="background-image: url('${des.himg}')"></div>
-            </div>
-            `)
+              <div class="index-list-body-hero">
+                  <div class="index-list-body-hero-img" style="background-image: url('${des.himg}')"></div>
+              </div>
+              `)
           }
         }
         

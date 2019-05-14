@@ -408,6 +408,7 @@ button:hover{
     padding: 0;
     list-style: none;
     margin: 0;
+    text-align: center;
 }
 .hero-list{
     position: relative;
