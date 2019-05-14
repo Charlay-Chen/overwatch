@@ -69,9 +69,9 @@ button:hover{
     line-height: 35px;
     transition: background-color .2s;
 }
-.index-nav-2 .content ul li a{
+/* .index-nav-2 .content ul li a{
     /*color: #f7931e;*/
-}
+} */
 .index-nav-2 .content ul li:hover{
     background-color: #4b535d;
 }
