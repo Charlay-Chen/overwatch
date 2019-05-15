@@ -1,5 +1,6 @@
 body{
-    background-color: #f6f6f6;
+    background-color: #fff;
+    height: 3336.19px;
 }
 .container{
     max-width: 1600px;
@@ -319,7 +320,7 @@ button:hover{
     top: -100px;
 }
 .index-list .index-list-header{
-    padding-top: 80px;
+    padding-top: 30px;
 }
 .index-list .index-list-header h2{
     margin-bottom: 44px;
@@ -429,7 +430,7 @@ button:hover{
     display: block;
     position: relative;
     width: 70px;
-    height: 84px;
+    height: 75px;
     margin: 2.4px 5px;
     border: 3px solid #f0edf2;
     border-left-width: 0;
@@ -478,4 +479,75 @@ button:hover{
 .hero-list:hover .hero-portrait-image-mask{
     transform: skew(25rad) scale(1.2);
     background-color: #f7931e;
+}
+
+
+.foot-buy{
+    text-align: center;
+    position: relative;
+    height: 280px;
+    border-top: 1px solid hsla(0,0%,100%,.4);
+    background-image: url(../img/index/foot-buy-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    top: -100px;
+    margin-top: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.foot-buy .foot-buy-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 680px;
+    height: 370px;
+    background-image: url(../img/index/foot-buy-img.png);
+}
+.foot-buy-des{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot-buy-des h2{
+    /* margin-bottom: 20px; */
+    font: italic normal normal 4rem "microsoft yahei",Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+    font-family: "microsoft yahei","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif!important;
+    text-align: center;
+}
+.foot-buy-des span{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 1rem;
+}
+.foot-buy-des a{
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px 28px;
+    margin: 0 10px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #f7931e
+}
+#footer{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 26px;
+    width: auto;
+    z-index: 3;
+    font-size: 12px!important;
+    height: 358px;
+    background: #202020;
+    top: -100px;
 }
